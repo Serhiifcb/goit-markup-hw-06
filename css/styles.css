@@ -482,6 +482,10 @@ img {
     color: var(--maincolor);
     margin-bottom: 12px;
 }
+.modal-label {
+    display: flex;
+    flex-direction: column;
+}
 .modal-label-title {
     font-family: 'Roboto';
     font-weight: 400;
@@ -497,14 +501,83 @@ img {
     border-radius: 4px;
     height: 40px;
     padding: 12px 42px;
+    outline: none;
+    margin-bottom: 10px;
 }
-.modal-input:hover, .modal-input:focus {
+.modal-input.comment {
+    height: 120px;
+    padding: 12px 16px;
+}
+textarea {
+    resize: none;
+}
+.modal-label:hover .modal-input{
     border-color: var(--bluecolor);
     cursor: pointer;
 }
-/* .modal-input:valid {
-    border-color: tomato;
-} */
+.modal-label:focus .modal-input {
+    border-color: var(--bluecolor);
+    cursor: pointer;
+}
+.modal-input:focus-within {
+    border-color: var(--bluecolor);
+}
+.modal-rules-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-rules-checkbox {
+    height: 15px;
+    width: 16px;
+}
+.modal-rules-icon {
+    margin-right: 7px;
+    border-radius: 2px;
+    border: 2px solid var(--maincolor);
+}
+.modal-rules-checkbox:checked + .modal-rules-icon {
+    background-color: var(--bluecolor);
+    border-color: var(--bluecolor);
+}
+.modal-rules-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--navcontactcolor);
+    margin-right: 5px;
+}
+.modal-rules-link {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--bluecolor);
+}
+.modal-button {
+    display: block;
+    padding: 10px 56px;
+    border: none;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--whitecolor);
+    cursor: pointer;
+}
 /*Класи для Портфоліо*/
 .button-list {
     display: flex;

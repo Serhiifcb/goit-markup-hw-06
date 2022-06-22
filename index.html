@@ -387,10 +387,33 @@
                 </svg>
             </button>
             <p class="modal-title">Залиште свої дані, ми Вам передзвонимо</p>
-            <label>
-                <p class="modal-label-title">Ім'я</p> 
-                <input type="text" class="modal-input" placeholder=" ">
-            </label>
+            <form class="modal-form">
+                <label class="modal-label">
+                    <span class="modal-label-title">Ім'я</span> 
+                    <input type="text" class="modal-input" placeholder=" " name="username">
+                </label>
+                <label class="modal-label">
+                    <span class="modal-label-title">Телефон</span>
+                    <input type="tel" class="modal-input" placeholder=" " name="phone">
+                </label>
+                <label class="modal-label">
+                    <span class="modal-label-title">Електронна пошта</span>
+                    <input type="email" class="modal-input" placeholder=" " name="mail">
+                </label>
+                <label class="modal-label">
+                    <span class="modal-label-title">Коментар</span>
+                    <textarea class="modal-input comment" placeholder="Введіть текст" name="comment" id="" rows="4"></textarea>
+                </label>
+                <label class="modal-rules-label">
+                    <input type="checkbox" name="rules" class="modal-rules-checkbox visually-hidden">
+                    <svg class="modal-rules-icon" width="16" height="15"> 
+                        <use href="./images/icons.svg#icon-modal-tick"></use>
+                    </svg>
+                    <span class="modal-rules-text">Погоджуюсь з розсилкою і приймаю</span>
+                    <a class="modal-rules-link" href="#">Умови договору</a>
+                </label>
+                <button type="submit" class="modal-button">Відправити</button>
+            </form>
         </div>
     </div>
     <!-- Скрипт для модального вікна -->
