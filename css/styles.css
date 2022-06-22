@@ -502,11 +502,24 @@ img {
     height: 40px;
     padding: 12px 42px;
     outline: none;
-    margin-bottom: 10px;
 }
 .modal-input.comment {
     height: 120px;
     padding: 12px 16px;
+}
+.label-field {
+    position: relative;
+    margin-bottom: 10px;
+}
+.modal-label-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-label:hover .modal-label-icon {
+    fill: var(--bluecolor);
+    cursor: pointer;
 }
 textarea {
     resize: none;
@@ -521,6 +534,9 @@ textarea {
 }
 .modal-input:focus-within {
     border-color: var(--bluecolor);
+}
+.modal-input:focus-within + .modal-label-icon {
+    fill: var(--bluecolor);
 }
 .modal-rules-label {
     display: flex;
