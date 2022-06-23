@@ -418,7 +418,7 @@ img {
 }
 .subscription {
     margin-top: 12px;
-    margin-left: 93px;
+    margin-left: auto;
 }
 .subscription-form {
     display: flex;
