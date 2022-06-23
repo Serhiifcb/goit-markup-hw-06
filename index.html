@@ -376,6 +376,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscription">
+                <p class="join-title">Підписуйтесь</p>
+                <form class="subscription-form">
+                    <label class="subscription-label">
+                        <input class="subcription-input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="subscription-button">
+                        <span class="subscription-button-title">Підписуйтесь</span>
+                        <svg class="icon-social-link" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <!-- Бекдроп для модального вікна-->
@@ -391,7 +405,7 @@
                 <label class="modal-label">
                     <span class="modal-label-title">Ім'я</span> 
                     <div class="label-field">
-                        <input type="text" class="modal-input" placeholder=" " name="username">
+                        <input type="text" class="modal-input" placeholder=" " name="username" required>
                         <svg class="modal-label-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-modal-person"></use>
                         </svg>
@@ -400,7 +414,7 @@
                 <label class="modal-label">
                     <span class="modal-label-title">Телефон</span>
                     <div class="label-field">
-                        <input type="tel" class="modal-input" placeholder=" " name="phone">
+                        <input type="tel" class="modal-input" placeholder=" " name="phone" required>
                         <svg class="modal-label-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-modal-phone"></use>
                         </svg>
@@ -409,7 +423,7 @@
                 <label class="modal-label">
                     <span class="modal-label-title">Електронна пошта</span>
                     <div class="label-field">
-                        <input type="email" class="modal-input" placeholder=" " name="mail">
+                        <input type="email" class="modal-input" placeholder=" " name="mail" required>
                         <svg class="modal-label-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-modal-email"></use>
                         </svg>
@@ -417,11 +431,15 @@
                 </label>
                 <label class="modal-label">
                     <span class="modal-label-title">Коментар</span>
-                    <textarea class="modal-input comment" placeholder="Введіть текст" name="comment" id="" rows="4"></textarea>
+                    <div class="textarea-field">
+                        <textarea class="modal-input comment" placeholder=" " name="comment" id="" rows="4"></textarea>
+                        <span class="modal-input-placeholder">Введіть текст</span>
+                    </div>
+                    
                 </label>
                 <!-- Мітка погодження з правилами договору -->
                 <label class="modal-rules-label">
-                    <input type="checkbox" name="rules" class="modal-rules-checkbox visually-hidden">
+                    <input type="checkbox" name="rules" class="modal-rules-checkbox visually-hidden" required>
                     <svg class="modal-rules-icon" width="16" height="15"> 
                         <use href="./images/icons.svg#icon-modal-tick"></use>
                     </svg>
